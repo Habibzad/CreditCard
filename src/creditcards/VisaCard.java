@@ -8,8 +8,8 @@ public class VisaCard extends CreditCard{
 	
 	@Override
 	public String toString() {
-		return "Visa Card:\n=========== \nCardNumber: " + cardNumber + "\nHolderName: " + ccHolderName + "\nexpirationDate: "
-				+ expirationDate;
+		return "Visa Card:\n=========== \nCardNumber: " + getCardNumber() + "\nHolderName: " + getCcHolderName() + "\nexpirationDate: "
+				+ getExpirationDate() +"\ncsv: "+ getCsv();
 	}
 
 }

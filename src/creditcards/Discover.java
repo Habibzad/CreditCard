@@ -8,7 +8,7 @@ public class Discover extends CreditCard{
 
 	@Override
 	public String toString() {
-		return "Discover:\n=========== \nCardNumber: " + cardNumber + "\nHolderName: " + ccHolderName + "\nexpirationDate: "
-				+ expirationDate;
+		return "Discover:\n=========== \nCardNumber: " + getCardNumber() + "\nHolderName: " + getCcHolderName() + "\nexpirationDate: "
+				+ getExpirationDate()+"\ncsv: "+ getCsv();
 	}
 }

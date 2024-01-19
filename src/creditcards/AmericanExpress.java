@@ -8,8 +8,8 @@ public class AmericanExpress extends CreditCard{
 	
 	@Override
 	public String toString() {
-		return "AmericanExpress:\n=========== \nCardNumber: " + cardNumber + "\nHolderName: " + ccHolderName + "\nexpirationDate: "
-				+ expirationDate;
+		return "AmericanExpress:\n=========== \nCardNumber: " + getCardNumber() + "\nHolderName: " + getCcHolderName() + "\nexpirationDate: "
+				+ getExpirationDate()+"\ncsv: "+ getCsv();
 	}
 
 }

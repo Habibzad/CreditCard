@@ -8,8 +8,8 @@ public class MasterCard extends CreditCard{
 	
 	@Override
 	public String toString() {
-		return "MasterCard:\n=========== \nCardNumber: " + cardNumber + "\nHolderName: " + ccHolderName + "\nexpirationDate: "
-				+ expirationDate;
+		return "MasterCard:\n=========== \nCardNumber: " + getCardNumber() + "\nHolderName: " + getCcHolderName() + "\nexpirationDate: "
+				+ getExpirationDate() +"\ncsv: "+ getCsv();
 	}
 
 }

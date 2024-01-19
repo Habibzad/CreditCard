@@ -19,7 +19,7 @@ public class CCFactoryImpl implements CCFactory{
 	     */
 		
 		String cardNumber = ccDetails[0];
-		if(cardNumber.equals("")) return null;
+		if(cardNumber.isEmpty()) return null;
 		if(cardNumber.length() <= 16) {
             if(cardNumber.length() == 15 && cardNumber.startsWith("3")) { return new AmericanExpress(ccDetails); }
             if(cardNumber.startsWith("6")) { return new Discover(ccDetails); }

@@ -1,15 +1,30 @@
 package creditcards;
 
+import java.util.Random;
+import java.util.UUID;
+
 public abstract class CreditCard {
-	protected String cardNumber;
-	protected String ccHolderName;
-	protected String expirationDate;
+	private String cardNumber;
+	private String ccHolderName;
+	private String expirationDate;
+	private int csv;
+
 
     public CreditCard(String[] ccDetails) {
         this.cardNumber = ccDetails[0];
         this.expirationDate = ccDetails[1];
         this.ccHolderName = ccDetails[2];
+		this.csv = generateCsv();
     }
+
+	public int getCsv() {
+		return csv;
+	}
+
+	private int generateCsv() {
+		Random random = new Random();
+        return random.nextInt(900) + 100;
+	}
 
 	public String getCardNumber() {
 		return cardNumber;
